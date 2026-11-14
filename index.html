@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>赵凯文 · 电商运营 | 个人主页</title>
+<meta name="description" content="赵凯文，澳门科技大学工商管理硕士在读，2027 届。三段电商实习：汤臣倍健抖音电商运营、东方甄选商品运营、江西旅游集团运营助理。">
+<meta property="og:title" content="赵凯文 · 电商运营">
+<meta property="og:description" content="达人开链、寄样效期、合规卡审、千川对账——把开播前的每一步跑成流程，再用数据复盘。">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1523'/%3E%3Ctext x='32' y='44' font-size='34' font-family='sans-serif' fill='%23fff' text-anchor='middle'%3E赵%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#0B1523;
+  --ink2:#2A3648;
+  --muted:#66748C;
+  --line:#E5E9F2;
+  --soft:#F6F8FC;
+  --brand:#1D4ED8;
+  --brand2:#3B82F6;
+  --accent:#F97316;
+  --max:1060px;
+  --radius:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;color:var(--ink);background:#fff;line-height:1.75;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC","Noto Sans CJK SC",sans-serif;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+a{color:inherit;text-decoration:none}
+::selection{background:#DBEAFE}
+
+/* ---------- nav ---------- */
+.nav{
+  position:fixed;inset:0 0 auto 0;z-index:60;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px clamp(20px,5vw,48px);
+  color:#E8EEF8;border-bottom:1px solid rgba(255,255,255,0);
+  transition:background .3s,border-color .3s,color .3s,box-shadow .3s;
+}
+.nav.solid{background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(12px);color:var(--ink);border-bottom-color:var(--line);box-shadow:0 1px 20px rgba(15,23,42,.04)}
+.nav .brand{font-weight:700;letter-spacing:.06em;font-size:15px;display:flex;align-items:center;gap:10px}
+.nav .brand i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);font-style:normal}
+.nav ul{display:flex;gap:clamp(14px,2.4vw,30px);list-style:none;margin:0;padding:0;font-size:14px;letter-spacing:.02em}
+.nav a{opacity:.82;transition:opacity .2s}
+.nav a:hover{opacity:1}
+@media(max-width:760px){.nav ul{display:none}}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;overflow:hidden;color:#fff;
+  padding:clamp(88px,14vh,132px) clamp(20px,5vw,48px) clamp(56px,8vh,80px);
+  background:
+    radial-gradient(900px 520px at 78% -8%,rgba(37,99,235,.55) 0%,rgba(37,99,235,0) 62%),
+    radial-gradient(700px 420px at 8% 108%,rgba(249,115,22,.18) 0%,rgba(249,115,22,0) 60%),
+    linear-gradient(158deg,#070E1A 0%,#0C1B2E 50%,#0F2740 100%);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:58px 58px;
+  -webkit-mask-image:radial-gradient(circle at 50% 34%,#000 0%,transparent 74%);
+  mask-image:radial-gradient(circle at 50% 34%,#000 0%,transparent 74%);
+}
+.hero::after{
+  content:"";position:absolute;width:520px;height:520px;right:-160px;top:-180px;border-radius:50%;
+  background:radial-gradient(circle,rgba(59,130,246,.30),rgba(59,130,246,0) 68%);filter:blur(10px);pointer-events:none;
+}
+.wrap{max-width:var(--max);margin:0 auto;position:relative;z-index:2}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:#9FB6D4;
+  border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);
+  padding:6px 14px;border-radius:999px;
+}
+.eyebrow b{color:#fff;font-weight:600;letter-spacing:.08em}
+.dot{width:6px;height:6px;border-radius:50%;background:#34D399;box-shadow:0 0 0 0 rgba(52,211,153,.7);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,211,153,.55)}70%{box-shadow:0 0 0 7px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+
+h1.name{
+  margin:26px 0 10px;font-size:clamp(44px,7.2vw,76px);line-height:1.06;letter-spacing:-.02em;font-weight:800;
+}
+h1.name small{display:block;font-size:clamp(13px,1.5vw,16px);font-weight:500;letter-spacing:.34em;color:#7E9BC0;margin-top:16px;text-transform:uppercase}
+.role{font-size:clamp(17px,2vw,21px);color:#CFE0F5;font-weight:500;letter-spacing:.02em;margin:0 0 6px}
+.role span{color:#5B7FA8;margin:0 10px}
+.lede{max-width:640px;color:#9DB2CC;font-size:clamp(14.5px,1.5vw,16.5px);margin:22px 0 0}
+
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:#D6E3F4;
+  background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.11);
+  padding:8px 14px;border-radius:10px;transition:.2s;
+}
+.chip:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.22)}
+.chip svg{width:15px;height:15px;opacity:.75;flex:none}
+
+.stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:clamp(44px,7vh,64px);
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;
+}
+.stat{background:rgba(8,17,31,.55);padding:22px 20px 20px}
+.stat b{display:block;font-size:clamp(24px,3vw,32px);font-weight:750;letter-spacing:-.01em;line-height:1.2}
+.stat b em{font-style:normal;color:var(--accent)}
+.stat span{display:block;margin-top:7px;font-size:12.5px;color:#8AA0BC;letter-spacing:.03em}
+@media(max-width:780px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.stats{grid-template-columns:1fr 1fr}}
+
+/* ---------- sections ---------- */
+section{padding:clamp(58px,9vh,92px) clamp(20px,5vw,48px);scroll-margin-top:72px}
+.sec-soft{background:var(--soft)}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:clamp(28px,4vh,44px)}
+.sec-num{font-size:12px;letter-spacing:.18em;color:var(--accent);font-weight:700;padding-top:6px}
+.sec-head h2{margin:0;font-size:clamp(24px,3vw,32px);letter-spacing:-.01em;font-weight:750}
+.sec-head .line{flex:1;height:1px;background:var(--line);margin-left:8px;transform:translateY(-4px)}
+@media(max-width:560px){.sec-head .line{display:none}}
+
+/* ---------- about ---------- */
+.about{display:grid;grid-template-columns:1.35fr .95fr;gap:clamp(28px,4vw,56px);align-items:start}
+.about p{margin:0 0 16px;color:var(--ink2);font-size:15.5px}
+.about p:last-child{margin-bottom:0}
+.about strong{color:var(--ink);font-weight:650;background:linear-gradient(transparent 62%,#FDE7CF 62%);padding:0 2px}
+.pull{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;
+  box-shadow:0 10px 30px -18px rgba(15,23,42,.25);
+}
+.pull h4{margin:0 0 14px;font-size:12px;letter-spacing:.16em;color:var(--muted);font-weight:600}
+.pull ul{margin:0;padding-left:18px;color:var(--ink2);font-size:14.2px}
+.pull li{margin:9px 0}
+.pull li::marker{color:var(--brand2)}
+@media(max-width:820px){.about{grid-template-columns:1fr}}
+
+/* ---------- experience ---------- */
+.xp{
+  position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(22px,3vw,30px);margin-bottom:18px;
+  box-shadow:0 1px 2px rgba(15,23,42,.03);
+  transition:box-shadow .25s,transform .25s,border-color .25s;
+}
+.xp:hover{box-shadow:0 18px 40px -26px rgba(15,23,42,.35);border-color:#D8DFEC}
+.xp-top{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}
+.logo{
+  width:46px;height:46px;border-radius:12px;flex:none;display:grid;place-items:center;
+  font-weight:700;font-size:17px;color:#fff;letter-spacing:.02em;
+  background:linear-gradient(150deg,#1D4ED8,#3B82F6);
+}
+.logo.amber{background:linear-gradient(150deg,#B45309,#F59E0B)}
+.logo.teal{background:linear-gradient(150deg,#0F766E,#14B8A6)}
+.xp-title{flex:1;min-width:220px}
+.xp-title h3{margin:2px 0 4px;font-size:clamp(17px,2vw,20px);font-weight:750;letter-spacing:-.005em;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tag{font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--brand);background:#EFF4FF;border:1px solid #DCE6FF;border-radius:6px;padding:2px 8px}
+.xp-sub{margin:0;color:var(--ink2);font-size:14.5px}
+.xp-meta{margin:6px 0 0;color:var(--muted);font-size:12.8px;letter-spacing:.02em;display:flex;gap:14px;flex-wrap:wrap}
+.xp-meta .now{color:#0E9F6E;font-weight:600}
+.xp ul.bul{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:9px}
+.xp ul.bul li{position:relative;padding-left:18px;color:var(--ink2);font-size:14.4px}
+.xp ul.bul li::before{content:"";position:absolute;left:2px;top:.68em;width:5px;height:5px;border-radius:50%;background:#C3CEE1}
+.xp ul.bul b{color:var(--ink);font-weight:650}
+.kv{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+.kv span{font-size:12px;color:#4A5873;background:#F3F6FB;border:1px solid #E7ECF6;border-radius:7px;padding:3px 9px}
+
+/* ---------- projects ---------- */
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.proj{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;transition:.25s}
+.proj:hover{transform:translateY(-3px);box-shadow:0 18px 40px -28px rgba(15,23,42,.4)}
+.proj .ico{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:#EFF4FF;color:var(--brand);margin-bottom:14px}
+.proj h3{margin:0 0 8px;font-size:16px;font-weight:700}
+.proj p{margin:0;color:var(--muted);font-size:13.8px;line-height:1.7}
+@media(max-width:860px){.proj-grid{grid-template-columns:1fr}}
+
+/* ---------- education ---------- */
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.edu-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px}
+.edu-card h3{margin:0 0 6px;font-size:16.5px;font-weight:700}
+.edu-card .sub{color:var(--ink2);font-size:14px;margin:0 0 4px}
+.edu-card .meta{color:var(--muted);font-size:12.8px;margin:0}
+.edu-card .honor{margin-top:12px;display:inline-block;font-size:12.5px;color:#8A4B0F;background:#FEF3E2;border:1px solid #FCE3C0;border-radius:7px;padding:3px 10px}
+@media(max-width:760px){.edu{grid-template-columns:1fr}}
+
+/* ---------- skills ---------- */
+.skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skill{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.skill h4{margin:0 0 14px;font-size:13px;letter-spacing:.1em;color:var(--muted);font-weight:600}
+.skill .tags{display:flex;flex-wrap:wrap;gap:7px}
+.skill .tags span{font-size:13px;color:#33415C;background:#F5F7FC;border:1px solid #E8EDF7;border-radius:7px;padding:4px 10px}
+@media(max-width:760px){.skill-grid{grid-template-columns:1fr}}
+
+/* ---------- contact ---------- */
+.contact{background:linear-gradient(160deg,#08111F,#0E2138 60%,#123055);color:#fff;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:58px 58px;-webkit-mask-image:radial-gradient(circle at 70% 20%,#000,transparent 70%);mask-image:radial-gradient(circle at 70% 20%,#000,transparent 70%);pointer-events:none}
+.contact .wrap{display:block}
+.contact .inner{max-width:640px}
+.contact .meta{margin-top:26px;display:flex;gap:26px;flex-wrap:wrap;font-size:13.5px;color:#8AA0BC}
+.contact .meta b{display:block;color:#fff;font-weight:600;font-size:15px;margin-bottom:2px}
+.contact h2{margin:0 0 14px;font-size:clamp(26px,3.4vw,36px);letter-spacing:-.01em}
+.contact p{margin:0;color:#9DB2CC;max-width:520px;font-size:15px}
+.mail{
+  display:inline-flex;align-items:center;gap:12px;margin-top:26px;padding:14px 22px;border-radius:12px;
+  background:#fff;color:var(--ink);font-weight:650;font-size:15.5px;letter-spacing:.01em;
+  box-shadow:0 14px 40px -18px rgba(0,0,0,.6);transition:.22s;
+}
+.mail:hover{transform:translateY(-2px);box-shadow:0 22px 50px -20px rgba(0,0,0,.7)}
+.mail svg{width:17px;height:17px}
+.qr{display:none}
+@media(max-width:760px){.qr{display:none}}
+
+footer{background:#050B14;color:#5D6E86;font-size:12.5px;padding:22px clamp(20px,5vw,48px);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer .wrap{display:flex;justify-content:space-between;width:100%;gap:16px;flex-wrap:wrap}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.dot{animation:none}html{scroll-behavior:auto}}
+
+/* print */
+@media print{
+  .nav,.contact .qr{display:none!important}
+  .hero{background:#fff!important;color:#000;padding:24px 0}
+  .hero::before,.hero::after{display:none}
+  .eyebrow,.lede,.role{color:#333}
+  .stats{background:#eee;border-color:#ddd}
+  .stat{background:#fff}
+  .stat b,.stat span{color:#000}
+  section{padding:18px 0;page-break-inside:avoid}
+  .xp,.proj,.skill,.edu-card{box-shadow:none;border-color:#ddd}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a class="brand" href="#top"><i></i>赵凯文 · Kevin Zhao</a>
+  <ul>
+    <li><a href="#about">关于</a></li>
+    <li><a href="#experience">经历</a></li>
+    <li><a href="#projects">项目</a></li>
+    <li><a href="#education">教育</a></li>
+    <li><a href="#skills">技能</a></li>
+    <li><a href="#contact">联系</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span><b>2027 届</b> · 求职中 · 电商运营方向</div>
+    <h1 class="name">赵凯文<small>Kevin Zhao</small></h1>
+    <p class="role">电商运营<span>/</span>抖音电商运营<span>/</span>达人运营</p>
+    <p class="lede">三段电商实习，从商品审核到达人分销，覆盖“选品—开链—寄样—卡审—投流—复盘”的完整链路。习惯先把散落在多份导出的数据合成一张可追溯的底表，再谈判断。</p>
+
+    <div class="hero-meta">
+      <a class="chip" href="mailto:kevinzhaokw@163.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        kevinzhaokw@163.com
+      </a>
+      <span class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h18v14H3z"/><path d="M3 9h18"/></svg>
+        澳门科技大学 · 工商管理硕士（在读）
+      </span>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>7<em>万+</em></b><span>经营明细核验（8—9 月）</span></div>
+      <div class="stat"><b>1,000<em>+</em></b><span>商品 Listing 审核优化</span></div>
+      <div class="stat"><b>5,000<em>+</em></b><span>跨平台同规格比价</span></div>
+      <div class="stat"><b>10<em>+</em></b><span>提报表与直播手卡</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">01</span><h2>关于我</h2><span class="line"></span></div>
+    <div class="about">
+      <div>
+        <p>我是赵凯文，澳门科技大学工商管理硕士在读。本科在华南农业大学读房地产开发与管理，GPA 3.89/5、专业排名前 10%——<strong>不是电商科班，是先把数据底子打好了才转过来的</strong>。</p>
+        <p>2026 年 5 月进东方甄选做商品运营，负责日用品类目上播前的 Listing 审核与货盘诊断；8 月转到汤臣倍健 BYHEALTH 兴趣电商部做抖音电商运营，跟达人分销这条线：开链、寄样、卡审、提报、千川对账。</p>
+        <p>我做的事大多在“开播之前”和“结算之前”——不显眼，但漏一步就要返工。所以我习惯把每一步拆成可追踪的状态，再用 Excel / SQL 把它变成能查的数据，而不是散在聊天记录里。</p>
+      </div>
+      <aside class="pull">
+        <h4>工作方式</h4>
+        <ul>
+          <li><b>先统一口径，再算数</b>：多份表先按订单 ID / 渠道 / 商品对齐，避免重复累计。</li>
+          <li><b>先卡节点，再谈推进</b>：开播、上新、结算都有 T-1 的死线，提前一天把物料和链接对齐。</li>
+          <li><b>AI 用来省手，不用来省脑</b>：流程和字段我自己定，AI 负责把重复劳动写成工具。</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="sec-soft">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">02</span><h2>实习经历</h2><span class="line"></span></div>
+
+    <article class="xp reveal">
+      <div class="xp-top">
+        <div class="logo">汤</div>
+        <div class="xp-title">
+          <h3>汤臣倍健股份有限公司 <span class="tag">实习</span></h3>
+          <p class="xp-sub">抖音电商运营实习生 · BYHEALTH 兴趣电商部</p>
+          <p class="xp-meta"><span class="now">2026.08 — 至今</span><span>抖音 / 快手 · 达人分销</span><span>营养保健</span></p>
+        </div>
+      </div>
+      <ul class="bul">
+        <li><b>渠道品开链与达人对接</b>　按达人机制配置四类渠道品（普通版／专属版／KOC／辛选版），精选联盟绑佣金、团长合作按报名—绑链—开白落地；同步下发设计需求 9 批 13 份、交付 29 份，配套提报表与手卡保障机制上线。</li>
+        <li><b>经营日报与周度数据</b>　每日按五体裁拆成交与退款回填财务版日报，跟踪月度收入目标达成；每周更新联盟、团长、快手、千川四套主表约 3.2 万行，累计 10 个周度周期。</li>
+        <li><b>千川投放与费用核销</b>　按控成本建全域投放计划（日预算 1 万、净成交 ROI 目标 1.86）；6 个账户逐月核对消耗与余额；完成平台扣点有票／无票两类核销，比对 1—5 月发票 145 万及差额。</li>
+        <li><b>寄样与效期风控</b>　每日核对寄样表、安排顺丰寄送并回填单号，申领走跨境供应链领用流程并按最新效期把关；累计 7 批／5 个 SKU／472 件。</li>
+        <li><b>合规卡审与提报物料</b>　素材上线前按平台规则自查，134 条拒审按超范围宣传／功效暗示／医疗混淆／违规承诺四类归因并输出改写建议；整理自家鱼油 5 款价格带与成分对比，统一直播口播卖点；累计提报表、卖点卡与手卡 10 份以上。</li>
+        <li><b>AI 工具提效</b>　针对寄样进度散在聊天记录、易漏跟，自定字段与五阶段状态，用 AI 完成达人寄样管理台（阶段筛选、待跟进／已寄出统计、导出 CSV），流程由本人设计并验证。</li>
+      </ul>
+      <div class="kv"><span>精选联盟</span><span>团长分销</span><span>巨量千川</span><span>合规卡审</span><span>寄样管理</span><span>财务版日报</span></div>
+    </article>
+
+    <article class="xp reveal">
+      <div class="xp-top">
+        <div class="logo amber">东</div>
+        <div class="xp-title">
+          <h3>东方甄选科技有限公司 <span class="tag">实习</span></h3>
+          <p class="xp-sub">商品运营实习生 · 直播电商供应链中台部</p>
+          <p class="xp-meta"><span>2026.05 — 2026.07</span><span>日用品类目</span></p>
+        </div>
+      </div>
+      <ul class="bul">
+        <li><b>平台商品与 Listing 审核优化</b>　负责日用品类目商品上会／上播前全流程审核，围绕主图、标题、规格参数和属性描述建立标准化校验；审核并优化商品 1,000+，修复标题与规格不符、属性缺失等问题 300+。</li>
+        <li><b>竞品监测与定价支持</b>　持续跟踪抖音、淘宝／天猫、京东、拼多多等平台，按同品牌、同规格和替代品维度开展价格带、补贴、赠品及满减机制调研；累计完成商品比价 5,000+，准确率 95%+。</li>
+        <li><b>货盘健康度与动销管理</b>　使用 Excel 搭建《品类货盘动销与健康度诊断看板》，追踪四级类目销量门槛、好评率和价格波动；协助建立货盘分层淘汰机制，累计汰换 50+ 款低动销／高客诉风险 SKU，类目综合动销率提升 15%+。</li>
+        <li><b>跨部门协同与流程优化</b>　联动商务 BD、直播运营和质检团队，盯住 T-1 节点 DDL，推动异常改价与物料更新，问题按时闭环率 100%；沉淀《品类上架易错自查清单》，协助将单品上新审核耗时缩短 30%。</li>
+        <li><b>AI 工具提效</b>　使用 Codex 进行 vibe coding，开发两款插件，推动 Listing 优化效率提升 200%、日均商品比价数量提升 50%。</li>
+      </ul>
+      <div class="kv"><span>Listing 审核</span><span>价格带调研</span><span>动销看板</span><span>SKU 汰换</span><span>Codex 插件</span></div>
+    </article>
+
+    <article class="xp reveal">
+      <div class="xp-top">
+        <div class="logo teal">赣</div>
+        <div class="xp-title">
+          <h3>江西旅游集团 · 赣游通国际旅行社 <span class="tag">实习</span></h3>
+          <p class="xp-sub">运营助理</p>
+          <p class="xp-meta"><span>2024.04 — 2024.07</span><span>线上旅游产品</span></p>
+        </div>
+      </div>
+      <ul class="bul">
+        <li><b>商品运营与审核</b>　负责线上旅游产品 SKU 的日常运营，分析去哪儿、携程、同程等竞品的路线定价与促销策略，确保产品定价具备市场竞争力；同时审核上架产品的图文信息，保障准确性与合规性。</li>
+        <li><b>需求响应与数据转化</b>　参与暑期旅游旺季等大促节点的营销活动，高效处理后台订单异常，客需响应时间缩短至 10 分钟内，累计促成转化交易 300+ 笔，客户满意度 98% 以上。</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">03</span><h2>做过的工具</h2><span class="line"></span></div>
+    <div class="proj-grid">
+      <article class="proj reveal">
+        <div class="ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+        <h3>达人寄样管理台</h3>
+        <p>把申样、效期、审批、寄送、物流、UID 绑定、渠道链接拆成可追踪的阶段，支持待跟进筛选、进度统计与 CSV 导出。流程与字段由本人定义并验证，AI 负责生成代码。</p>
+      </article>
+      <article class="proj reveal">
+        <div class="ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5"/><path d="M4 19h16"/><rect x="7" y="12" width="3" height="5" rx="1"/><rect x="12" y="8" width="3" height="9" rx="1"/><rect x="17" y="4" width="3" height="13" rx="1"/></svg></div>
+        <h3>货盘动销健康度看板</h3>
+        <p>用 Excel 搭的四级类目诊断表，追踪销量门槛、好评率与价格波动，支撑 50+ 款低动销／高客诉 SKU 的分层汰换。</p>
+      </article>
+      <article class="proj reveal">
+        <div class="ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 9-4 3 4 3"/><path d="m16 9 4 3-4 3"/><path d="m13 5-2 14"/></svg></div>
+        <h3>Listing 审核辅助插件</h3>
+        <p>东方甄选期间用 Codex 写的两款浏览器插件，用于标题／属性一致性校验与批量比价取数，减少重复点击与手工抄录。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="sec-soft">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">04</span><h2>教育背景</h2><span class="line"></span></div>
+    <div class="edu">
+      <div class="edu-card reveal">
+        <h3>澳门科技大学</h3>
+        <p class="sub">工商管理硕士（管理学）· 商学院</p>
+        <p class="meta">2025.09 — 至今</p>
+        <p class="meta" style="margin-top:10px">核心课程：营销管理、管理经济学、战略管理</p>
+      </div>
+      <div class="edu-card reveal">
+        <h3>华南农业大学 <span style="font-size:12px;color:#1D4ED8;font-weight:600">双一流</span></h3>
+        <p class="sub">房地产开发与管理 · 公共管理学院（本科）</p>
+        <p class="meta">2020.09 — 2024.07</p>
+        <span class="honor">GPA 3.89 / 5 · 专业排名前 10%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">05</span><h2>技能与工具</h2><span class="line"></span></div>
+    <div class="skill-grid">
+      <div class="skill reveal">
+        <h4>电商运营</h4>
+        <div class="tags"><span>达人开链</span><span>渠道品配置</span><span>佣金配置与结算</span><span>寄样与效期管理</span><span>直播提报</span><span>合规卡审</span><span>选品与价格带</span><span>动销复盘</span></div>
+      </div>
+      <div class="skill reveal">
+        <h4>数据与工具</h4>
+        <div class="tags"><span>Excel（多表合并去重）</span><span>SQL</span><span>SPSS</span><span>抖音罗盘</span><span>巨量千川</span><span>抖店后台</span><span>快手小店</span><span>PS / PR</span></div>
+      </div>
+      <div class="skill reveal">
+        <h4>语言与证书</h4>
+        <div class="tags"><span>英语 CET-6（579）</span><span>计算机二级</span></div>
+      </div>
+      <div class="skill reveal">
+        <h4>AI 工具</h4>
+        <div class="tags"><span>Codex</span><span>Claude Code</span><span>DeepSeek Harness</span><span>Workbuddy</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="inner">
+      <h2>聊一聊？</h2>
+      <p>正在找 2027 届电商运营 / 抖音电商运营 / 达人运营的岗位。简历之外的问题，欢迎直接邮件找我。</p>
+      <a class="mail" href="mailto:kevinzhaokw@163.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        kevinzhaokw@163.com
+      </a>
+      <div class="meta">
+        <div><b>毕业时间</b>2027 年 6 月</div>
+        <div><b>到岗安排</b>可提前实习</div>
+        <div><b>意向岗位</b>电商运营 · 达人运营</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="y">2026</span> 赵凯文 · Kevin Zhao</span>
+    <span>最后更新：2026 年 11 月</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav = document.getElementById('nav');
+  var onScroll = function(){
+    if (window.scrollY > 40) nav.classList.add('solid'); else nav.classList.remove('solid');
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>
